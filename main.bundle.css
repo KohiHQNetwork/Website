@@ -8,3 +8,7 @@
 #bg-stretch1656138807665956 {
     background-image: url(/bg-box.png);
 }
+
+.block-sections .holder-section-text {
+    padding: 0 30px 11px
+}
