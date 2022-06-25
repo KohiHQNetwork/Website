@@ -12,3 +12,24 @@
 .holder-section-text {
     padding: 0 30px 11px
 }
+
+.img-title {
+    position: relative;
+    z-index: 1;
+    height: 114px;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 0 18px
+}
