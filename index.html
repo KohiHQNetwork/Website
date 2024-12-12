@@ -239,46 +239,49 @@
                 // Construct HTML content for each announcement
                 var htmlContent = `
                     <div class="post-holder">
-			<div class="post-item">
-				<div class="post-header">
-					<div class="title">
-					<a href="${response.readMoreLink}">
-						<h2>${response.title}</h2>
-					</a>
-					<span class="author">
-						<a href="${response.author.link}"> ${response.author.name} </a>
-					</span>
-					<time class="relative-time" datetime="${response._id.timestamp}" data-format="ago" data-toggle="tooltip" title="${response.postedTime}">${response.postedTime}</time>
-					</div>
-					</div>
-					<div class="post-body">
-						${response.content}
-					</div>
-				<div class="btn-holder btn-danger">
-					<a href="${response.readMoreLink}" class="btn"> Read more... </a>
-				</div>
-			</div>
-		</div>
+            			<div class="post-item">
+            				<div class="post-header">
+            					<div class="title">
+            					<a href="${response.readMoreLink}">
+            						<h2>${response.title}</h2>
+            					</a>
+            					<span class="author">
+            						<a href="${response.author.link}"> ${response.author.name} </a>
+            					</span>
+            					<time class="relative-time" datetime="${response._id.timestamp}" data-format="ago" data-toggle="tooltip" title="${response.postedTime}">${response.postedTime}</time>
+            					</div>
+            					</div>
+            					<div class="post-body">
+            						${response.content}
+            					</div>
+            				<div class="btn-holder btn-danger">
+            					<a href="${response.readMoreLink}" class="btn"> Read more... </a>
+            				</div>
+            			</div>
+            		</div>
                 `;
                 // Append the HTML content to the news container
                 newsContainer.innerHTML += htmlContent;
             });
+            updateRelativeTimes();
         }
     };
     xhr.send();
-	
+    
+    updateRelativeTimes();
     dayjs.extend(dayjs_plugin_relativeTime);
-
-    // Update all <time> elements with the class 'relative-time'
-    document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
-        var timestamp = timeElement.getAttribute('datetime');
-        // Convert epoch time to relative time
-        var relativeTime = dayjs.unix(timestamp / 1000).fromNow();
-        // Update the text content with relative time
-        timeElement.textContent = relativeTime;
-        // Optionally, update the tooltip title too
-        timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
-    });
+    function updateRelativeTimes() {
+        // Update all <time> elements with the class 'relative-time'
+        document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
+            var timestamp = timeElement.getAttribute('datetime');
+            // Convert epoch time to relative time
+            var relativeTime = dayjs.unix(timestamp / 1000).fromNow();
+            // Update the text content with relative time
+            timeElement.textContent = relativeTime;
+            // Optionally, update the tooltip title too
+            timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
+        });
+    }
 </script>
 </body>
 </html>
