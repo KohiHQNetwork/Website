@@ -227,6 +227,25 @@
 <script>
     dayjs.extend(dayjs_plugin_relativeTime);
 
+    // Override the default behavior for singular units like "a year ago"
+    dayjs.updateLocale('en', {
+        relativeTime: {
+            future: "%s",
+            past: "%s",
+            s: 'seconds',
+            m: '1 minute',
+            mm: '%d minutes',
+            h: '1 hour',
+            hh: '%d hours',
+            d: '1 day',
+            dd: '%d days',
+            M: '1 month',
+            MM: '%d months',
+            y: '1 year',
+            yy: '%d years'
+        }
+    });
+
     // Update all <time> elements with the class 'relative-time'
     document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
         var timestamp = timeElement.getAttribute('datetime');
