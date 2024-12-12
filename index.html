@@ -263,21 +263,24 @@
                 // Append the HTML content to the news container
                 newsContainer.innerHTML += htmlContent;
             });
+            updatetimes();
         }
     };
     xhr.send();
-    
+    updatetimes();
     dayjs.extend(dayjs_plugin_relativeTime);
-    // Update all <time> elements with the class 'relative-time'
-    document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
-        var timestamp = timeElement.getAttribute('datetime');
-        // Convert epoch time to relative time
-        var relativeTime = dayjs.unix(timestamp / 1000).fromNow();
-        // Update the text content with relative time
-        timeElement.textContent = relativeTime;
-        // Optionally, update the tooltip title too
-        timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
-    });
+    function updatetimes() {
+        // Update all <time> elements with the class 'relative-time'
+        document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
+            var timestamp = timeElement.getAttribute('datetime');
+            // Convert epoch time to relative time
+            var relativeTime = dayjs.unix(timestamp / 1000).fromNow();
+            // Update the text content with relative time
+            timeElement.textContent = relativeTime;
+            // Optionally, update the tooltip title too
+            timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
+        });
+    }
 </script>
 </body>
 </html>
