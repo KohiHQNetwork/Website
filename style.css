@@ -3714,7 +3714,7 @@ body {
 	font-weight: 300;
 	line-height: 1;
 	margin-bottom: 0;
-	color: black;
+	color: white;
 	letter-spacing: 1px;
 	text-transform: none
 }
@@ -3723,7 +3723,7 @@ body {
 	font-size: 18px;
 	font-family: roboto, Arial, Helvetica, sans-serif;
 	font-weight: 300;
-	color: black
+	color: white
 }
 
 .footer .footer-banner .banner-info .banner-txt p span {
