@@ -1,149 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KohiHQ Network</title>
-    <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="static/css/bootstrap.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="" crossorigin="anonymous">
-    <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/flags.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KohiHQ Network</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="static/css/bootstrap.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/flags.css">
 </head>
-<body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="row">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding-bottom: 3px; padding-top: 3px">
-                        <a class="navbar-brand mr-3" href="/">
-                            <img src="/kohihqnav.png" alt="Text Logo" style="width: 45px">
-                        </a>
-                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/forums">Forums</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/staff">Staff</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Support</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://lunarclient.com">Client</a>
-                                </li>
-                                <li class="nav-link store-link">
-                                    <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Store</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline" action="/search">
-                                <div class="form-group" id="search_wrapper">
-                                    <input id="search" class="form-control" name="query" type="text" placeholder="search..." aria-label="Search">
-                                    <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </div>
-                            </form>
-                            <a class="nav-link" href="/login">Login</a>
-                            <a class="nav-link" href="/register">Register</a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <div class="container">
-            <main class="main">
-                <div class="home-banner">
-                    <img src="/kohihq.png" class="logo" style="width: 190px; height: 190px; margin-top: 28px; margin-bottom: 0px;">
-                    <h2><b>KohiHQ</b> Network</h2>
-                    <h3>The best crafters craft here</h3>
-                </div>
-                <div class="news">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="post-holder">
-                                <div class="post-item">
-                                    <div class="post-header">
-                                        <div class="title">
-                                            <a href="/forums/83683/The-Start-of-Something-New">
-                                                <h2>The Start of Something New</h2>
-                                            </a>
-                                            <span class="author">
-                                                <a href="/u/KohiHQ-Team">KohiHQ Team</a>
-                                            </span>
-                                            <!-- Update the time element -->
-                                            <time class="relative-time" datetime="1748778959" data-format="ago" data-toggle="tooltip" title="11:55 AM Jun 1">Jun 1, 2025</time>
-                                        </div>
-                                    </div>
-                                    <div class="post-body">
-                                        <p>
-                                            This has been a long wait for everyone and we are glad to announce KohiHQ. This has been in the works for quite a while now and we want to share it with you.
-                                            <br><br>
-                                            KohiHQ will have a new type of factions gamemode that will be revealed in a trailer in a few days.
-                                            <br><br>
-                                            As for now we plan on having these servers up at the end of next week for testing:
-                                        </p>
-                                    </div>
-                                    <div class="btn-holder btn-danger">
-                                        <a href="/forums/83683/The-Start-of-Something-New" class="btn">
-                                            Read more...
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="shiny-border footer-banner">
-                <a href="https://lunarclient.com">
-                    <div class="banner-info">
-                        <div class="banner-logo">
-                            <img src="static/images/logos/client.png" width="64" height="58" alt="Lunar Client Logo">
-                        </div>
-                        <div class="banner-txt">
-                            <h2>Lunar Client</h2>
-                            <p>Modpack for Minecraft</p>
-                        </div>
-                    </div>
-                    <div class="btn-holder">
-                        <button class="btn btn-white">
-                            <i class="fa fa-download"></i>
-                            <span>Download</span>
-                        </button>
-                    </div>
+<div class="wrapper">
+    <header class="header">
+       <div class="container">
+          <div class="row">
+             <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding-bottom: 3px; padding-top: 3px">
+                <a class="navbar-brand mr-3" href="/">
+                <img src="/kohihqnav.png" alt="Text Logo" style="width: 45px">
                 </a>
-            </div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                         <a class="nav-link" href="/forums">
+                         Forums
+                         </a>
+                      </li>
+                      
+                      <li class="nav-item">
+                         <a class="nav-link" href="/staff">Staff</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Support</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="https://lunarclient.com">Client</a>
+                      </li>
+                      <li class="nav-link store-link">
+                         <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Store</a>
+                      </li>
+                   </ul>
+                   <form class="form-inline" action="/search">
+                      <div class="form-group" id="search_wrapper">  
+                         <input id="search" class="form-control" name="query" type="text" placeholder="search..." aria-label="Search">
+                         <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                         </button>
+                      </div>
+                   </form>
+                   <a class="nav-link" href="/login">Login</a>
+                   <a class="nav-link" href="/register">Register</a>
+                </div>
+             </nav>
+          </div>
+       </div>
+    </header>
+    <div class="container">
+       <main class="main">
+          <div class="home-banner">
+             <img src="/kohihq.png" class="logo" style="width: 190px; height: 190px; margin-top: 28px; margin-bottom: 0px;">
+             <h2><b>KohiHQ</b> Network</h2>
+             <h3>The best crafters craft here</h3>
+          </div>
+          <div class="main-top">
+             <div class="row">
+                <div class="main-top-col">
+                   <div class="main-top-content content-center">
+                        <a class="link">
+                        <span><i class="fa fa-globe" aria-hidden="true"></i>Connect to dev123.KohiHQ.net</span>
+                        </a>
+                   </div>
+                </div>
+                <div class="main-top-col main-top-big">
+                   <div class="main-top-content content-center">
+                        There are currently 0 players online
+                   </div>
+                </div>
+                <div class="main-top-col">
+                   <div class="main-top-content main-top-button">
+                      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger">
+                      <i class="fa fa-shopping-cart"></i>
+                      <span>Visit the KohiHQ Network store</span>
+                      </a>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="news">
+             <div class="row">
+                <div class="col-lg-8">
+                   <div class="post-holder">
+                      <div class="post-item">
+                         <div class="post-header">
+                            <div class="title">
+                               <a href="/forums/83683/The-Start-of-Something-New">
+                                  <h2>The Start of Something New</h2>
+                               </a>
+                               <span class="author">
+                               <a href="/u/KohiHQ-Team">
+                               KohiHQ Team
+                               </a>
+                               </span>
+                                <time class="relative-time" datetime="1748778959" data-format="ago" data-toggle="tooltip" title="11:55 AM Jun 1">jun 1 2025</time>
+                            </div>
+                         </div>
+                         <div class="post-body">
+                            <p>
+                               This has been a long wait for everyone and we are glad to announce KohiHQ. This has been in the works for quite a while now and we want to share it with you.
+                               <br>
+                               <br>
+                               KohiHQ will have a new type of factions gamemode that will be revealed in a trailer in a few days.
+                               <br>
+                               <br>
+                               As for now we plan on having these servers up at the end of next week for testing:
+                            </p>
+                         </div>
+                         <div class="btn-holder btn-danger">
+                            <a href="/forums/83683/The-Start-of-Something-New" class="btn">
+                            Read more...
+                            </a>
+                         </div>
+                      </div>     
+                   </div>
+                    
+                   <div class="post-holder">
+                        <div class="post-item">
+                         <div class="post-header">
+                            <div class="title">
+                               <a href="/forums/96070/farewell-onto-the-next-chapter">
+                                  <h2>Farewell - Onto The Next Chapter</h2>
+                               </a>
+                               <span class="author">
+                               <a href="/u/Physci">
+                               Physci
+                               </a>
+                               </span>
+                                <time datetime="1685564033731" data-format="ago" data-toggle="tooltip" data-original-title="1:13 PM May 31 2023">May 31 2023</time>
+                            </div>
+                         </div>
+                         <div class="post-body">
+                            <p>
+                                            
+                                            
+                                                When we first opened the Lunar Network, we were a team of four teenagers who wanted to create a competitive Minecraft PvP server that focused on Practice, Hardcore Factions, and PotPvP. After over four years, there has been a decrease of interest and loss of passion in those game modes from our players and ourselves.<br><br>With that being said, we had to make the difficult decision to close the Lunar Network for the time being. We may do something in the future with the latest versions of Minecraft, but as of June 1st, 2023, the server will be whitelisted.<br><br>From the very start, our goal was to make a server that revolved around our players and community. It’s been a pleasure to interact with you all, listen to your ideas, and see you progress in the various games we once had. We believe that the majority of you are good people who just wanted to have fun on Minecraft, and so for that, we thank you for playing.<br><br>We had a lot of memorable moments on the Lunar Network, and we hope you all did as well. There were highs and lows, good times and bad, but all things must come to an end. <br><br>We will continue our work on Lunar Client to provide the best gameplay experience wherever you all choose to play next. We want to thank our incredible staff team, our talented developers, and the countless number of players who shaped the Lunar Network from the very beginning to today.<br><br>For now, we’re signing off. We want to thank all of our players who have continuously supported and believed in us. We appreciate you.<br><br>With Love,<br>Matt, Jordan, and Colin
+                                            
+                            </p>
+                         </div>
+                         <div class="btn-holder btn-danger">
+                            <a href="/forums/96070/farewell-onto-the-next-chapter" class="btn">
+                            Read more...
+                            </a>
+                         </div>
+                      </div>
+                    </div>
+                </div>
+              <iframe src="https://discord.com/widget?id=985372871318708295&theme=light" width="377" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </main>
+    </div>
+ </div>
+ <footer class="footer">
+    <div class="container">
+       <div class="shiny-border footer-banner">
+            <a href="https://lunarclient.com">
+                <div class="banner-info">
+                    <div class="banner-logo">
+                        <img src="static/images/logos/client.png" width="64" height="58" alt="Lunar Client Logo">
+                    </div>
+                    <div class="banner-txt">
+                        <h2>Lunar Client</h2>
+                        <p>Modpack for Minecraft</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <button class="btn btn-white">
+                        <i class="fa fa-download"></i>
+                        <span>Download</span>
+                    </button>
+                </div>
+            </a>
         </div>
-    </footer>
-    <script src="static/js/jquery-3.7.1.min.js"></script>
-    <script src="static/js/bootstrap.bundle.min.js"></script>
-    <script src="static/js/main.js"></script>
+       <div class="row">
+          <div class="col-md-6">
+             <ul class="social">
+                <li><a href="https://twitter.com/kohiihq"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://discord.gg/invite/NRXvKRuQ"><img src="/static/images/discord.3face1443dd2.svg" alt="discord"></a>
+                </li>
+             </ul>
+          </div>
+          <div class="col-md-6">
+             <div class="footer-right">
+                <div class="copyright">
+                   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                   Not affiliated with Kohi, Cheatbreaker, Lunar or MineHQ.
+                   </a>
+                </div>
+                <nav class="footer-nav">
+                   <ul>
+                      <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Terms &amp; Conditions</a></li>
+                      <li><a href="/privacy">Privacy Policy</a></li>
+                      <li><a href="/rules">Rules</a></li>
+                   </ul>
+                </nav>
+             </div>
+          </div>
+       </div>
+    </div>
+ </footer>
+ <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+       <div id="modal-content" class="modal-content"></div>
+    </div>
+ </div>
+<script src="static/js/jquery-3.7.1.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/main.js"></script>
 
-    <!-- Add dayjs library -->
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/plugin/relativeTime.js"></script>
-    <script>
-        dayjs.extend(dayjs_plugin_relativeTime);
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/plugin/relativeTime.js"></script>
+<script>
+    dayjs.extend(dayjs_plugin_relativeTime);
 
-        // Update all <time> elements with the class 'relative-time'
-        document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
-            var timestamp = timeElement.getAttribute('datetime');
-            // Convert epoch time to relative time
-            var relativeTime = dayjs.unix(timestamp).fromNow();
-            // Update the text content with relative time
-            timeElement.textContent = relativeTime;
-            // Optionally, update the tooltip title too
-            timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
-        });
-    </script>
+    // Update all <time> elements with the class 'relative-time'
+    document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
+        var timestamp = timeElement.getAttribute('datetime');
+        // Convert epoch time to relative time
+        var relativeTime = dayjs.unix(timestamp).fromNow();
+        // Update the text content with relative time
+        timeElement.textContent = relativeTime;
+        // Optionally, update the tooltip title too
+        timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
+    });
+</script>
 </body>
 </html>
