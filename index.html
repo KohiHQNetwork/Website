@@ -190,25 +190,5 @@
 <script src="static/js/jquery-3.7.1.min.js"></script>
 <script src="static/js/bootstrap.bundle.min.js"></script>
 <script src="static/js/main.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            // Display the modal
-            $('.copy-ip').click(function (event) {
-                event.preventDefault();
-
-                let copyText = 'dev123.kohihq.net';
-                toClipboard(copyText);
-
-                // Update the tooltip
-                $(this).attr('data-original-title', 'Copied IP!').tooltip('update').tooltip('show');
-
-                // Reset the tooltip
-                setTimeout(function () {
-                    $(this).attr('data-original-title', 'Click to Copy IP!').tooltip('update');
-                }.bind(this), 3000);
-            });
-        });
-    </script>
 </body>
 </html>
