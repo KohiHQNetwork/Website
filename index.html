@@ -268,8 +268,10 @@
     };
     xhr.send();
     updatetimes();
-    dayjs.extend(dayjs_plugin_relativeTime);
+    
     function updatetimes() {
+        dayjs.extend(dayjs_plugin_relativeTime);
+        
         // Update all <time> elements with the class 'relative-time'
         document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
             var timestamp = timeElement.getAttribute('datetime');
