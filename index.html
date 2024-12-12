@@ -262,7 +262,7 @@
                 `;
                 // Append the HTML content to the news container
                 //newsContainer.innerHTML += htmlContent;
-                newsContainer.prepend(htmlContent);
+                newsContainer.insertAdjacentHTML('afterbegin', htmlContent);
             });
             updatetimes();
         }
