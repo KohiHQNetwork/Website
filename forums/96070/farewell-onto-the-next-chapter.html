@@ -100,7 +100,7 @@ Farewell - Onto The Next Chapter
 <div>
 </div>
 <div class="forum-post-info">
-<time class="relative-time" datetime="1685564033731" data-format="ago" data-toggle="tooltip" data-original-title="1:13 PM May 31 2023">May 31 2023</time>
+<time class="relative-time" datetime="1685564033" data-format="ago" data-toggle="tooltip" data-original-title="1:13 PM May 31 2023">May 31 2023</time>
 by
 <a href="https://kohihq.net/u/Physci">
 <span class="font-weight-bold name-color-owner">
@@ -189,7 +189,7 @@ When we first opened the Lunar Network, we were a team of four teenagers who wan
     document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
         var timestamp = timeElement.getAttribute('datetime');
         // Convert epoch time to relative time
-        var relativeTime = dayjs.unix(timestamp / 1000).fromNow();
+        var relativeTime = dayjs.unix(timestamp).fromNow();
         // Update the text content with relative time
         timeElement.textContent = relativeTime;
         // Optionally, update the tooltip title too
