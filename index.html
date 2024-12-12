@@ -234,6 +234,7 @@
             var responses = JSON.parse(xhr.responseText);
             // Get the container for announcements
             var newsContainer = document.getElementById("news");
+            newsContainer.innerHTML = '';
             // Iterate over each announcement in the response
             responses.forEach(function (response) {
                 // Construct HTML content for each announcement
