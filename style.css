@@ -2106,7 +2106,7 @@ a:hover {
 
 .terms-section .heading .bg-stretch {
 	background-size: cover;
-	background: #22273d url(https://kohihq.net/kohihqheader.png) center;
+	background: #22273d url(/bg-box.png) center;
 	background-position: center;
 	position: absolute;
 	top: 0;
