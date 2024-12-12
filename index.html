@@ -231,7 +231,7 @@
     document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
         var timestamp = timeElement.getAttribute('datetime');
         // Convert epoch time to relative time
-        var relativeTime = dayjs.unix(parseInt(timestamp)).fromNow();
+        var relativeTime = dayjs.unix(timestamp / 1000).fromNow();
         // Update the text content with relative time
         timeElement.textContent = relativeTime;
         // Optionally, update the tooltip title too
