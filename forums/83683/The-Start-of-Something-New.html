@@ -100,7 +100,7 @@ The Start of Something New
 <div>
 </div>
 <div class="forum-post-info">
-<time class="relative-time" datetime="1748778959000" data-format="ago" data-toggle="tooltip">Jun 1 2025</time>
+<time class="relative-time" datetime="1748778959" data-format="ago" data-toggle="tooltip">Jun 1 2025</time>
 by
 <a href="https://kohihq.net/u/KohiHQ-Team">
 <span class="font-weight-bold name-color-owner">
@@ -189,7 +189,7 @@ This has been a long wait for everyone and we are glad to announce KohiHQ. This 
     document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
         var timestamp = timeElement.getAttribute('datetime');
         // Convert epoch time to relative time
-        var relativeTime = dayjs.unix(timestamp / 1000).fromNow();
+        var relativeTime = dayjs.unix(timestamp).fromNow();
         // Update the text content with relative time
         timeElement.textContent = relativeTime;
         // Optionally, update the tooltip title too
