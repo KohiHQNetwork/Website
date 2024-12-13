@@ -1,19 +1,36 @@
 [
   {
     "_id": {
-      "timestamp": 1734045812,
-      "counter": 6076105,
-      "randomValue1": 4718342,
-      "randomValue2": 31273
+      "timestamp": 1734047006,
+      "counter": 15405113,
+      "randomValue1": 7042435,
+      "randomValue2": 26711
     },
-    "title": "The End",
+    "title": "Farewell - Onto The Next Chapter",
     "author": {
-      "name": "A7e3",
-      "link": "/u/A7e3",
-      "avatar": "https://skins.mcstats.com/face/1403a220-1552-47a3-bd9a-3c38ee4869e0"
+      "name": "Physci",
+      "link": "/u/Physci"
     },
-    "postedTime": "3:23 PM Dec 12, 2024",
-    "content": "This is the time where we are going to be 100% honest with the community.\u003Cbr\u003E\u003Cbr\u003EWhen everything about Jonathan (itsjhalt) came out, our management team was lost. We didn't know what to say or do. Him resigning from his ownership position was true, he was not behind the scenes. However, we were under the impression that we were going to have 100% access to everything - that turned out to be false. The management team spoke with Jonathan (itsjhalt) one time after everything came out, and it was for only 1-2 hours. After that, we have not been in contact with him since. We aren’t going to get into any specifics on him due to his family’s request. We thought we could run everything without having full access to some key components of development, but it turned out we couldn’t.\u003Cbr\u003E\u003Cbr\u003EThere is absolutely no way we can continue operating MineHQ without having full ownership of the company. As of last week, development was halted as we started to come to a conclusion that the future of MineHQ was unknown. That is why there hasn’t been any major updates to games such as Bunkers, SG, Practice, and especially UHC. It’s not that we didn’t want to make the server better or weren’t listening to our players, we were. There were many good updates in progress, but we could not continue under the current circumstances. \u003Cbr\u003E\u003Cbr\u003EFor those of you who still believe CheatBreaker is not safe, we can assure you that it is. Every single rumor that claims otherwise is false. We posted an update on the CheatBreaker launcher on July 24th. For a full statement, you can read it there, or ask someone who uses CheatBreaker to screenshot it for you. CheatBreaker will continue to function for as long as it is paid for. There will be no public updates to CheatBreaker in the near future. We had a major update ready to be released to the public as a beta test, but as we said, we could not continue under the current circumstances. We are unaware of the future of CheatBreaker.\u003Cbr\u003E\u003Cbr\u003EThe only servers that will be up on MineHQ is going to be Practice and HCTeams.\u003Cbr\u003E\u003Cbr\u003EHCTeams Map 17 will continue until EOTW, we aren’t sure when that will be, but this is most likely going to be the last map, so make the best out of it. We tried bringing it back, but unfortunately that was not made possible after the events that unfolded.\u003Cbr\u003E\u003Cbr\u003EOur team plans on sticking together to give you guys a good server to play on. Whether that means joining an existing network or making one from scratch, we’re going to see what we can do. All that we ask is that you don’t hate us for making this decision. We know you guys like playing, but there is zero chance that this could have continued. There will be a post on our website regarding HCTeams.\u003Cbr\u003E\u003Cbr\u003EThanks for giving us a chance. We’re sorry.\u003Cbr\u003E\u003Cbr\u003EThis is the end of MineHQ as you know it today.",
-    "readMoreLink": "/forums/83683/The-Start-of-Something-New"
+    "postedTime": "13:13 PM May 31, 2023",
+    "content": "When we first opened the Lunar Network, we were a team of four teenagers who wanted to create a competitive Minecraft PvP server that focused on Practice, Hardcore Factions, and PotPvP. After over four years, there has been a decrease of interest and loss of passion in those game modes from our players and ourselves.\u003Cbr\u003E\u003Cbr\u003EWith that being said, we had to make the difficult decision to close the Lunar Network for the time being. We may do something in the future with the latest versions of Minecraft, but as of June 1st, 2023, the server will be whitelisted.\u003Cbr\u003E\u003Cbr\u003EFrom the very start, our goal was to make a server that revolved around our players and community. It’s been a pleasure to interact with you all, listen to your ideas, and see you progress in the various games we once had. We believe that the majority of you are good people who just wanted to have fun on Minecraft, and so for that, we thank you for playing.\u003Cbr\u003E\u003Cbr\u003EWe had a lot of memorable moments on the Lunar Network, and we hope you all did as well. There were highs and lows, good times and bad, but all things must come to an end. \u003Cbr\u003E\u003Cbr\u003EWe will continue our work on Lunar Client to provide the best gameplay experience wherever you all choose to play next. We want to thank our incredible staff team, our talented developers, and the countless number of players who shaped the Lunar Network from the very beginning to today.\u003Cbr\u003E\u003Cbr\u003EFor now, we’re signing off. We want to thank all of our players who have continuously supported and believed in us. We appreciate you.\u003Cbr\u003E\u003Cbr\u003EWith Love,\u003Cbr\u003EMatt, Jordan, and Colin",
+    "readMoreLink": "/forums/96070/farewell-onto-the-next-chapter",
+    "timestamp": "1685564033"
+  },
+  {
+    "_id": {
+      "timestamp": 1734047049,
+      "counter": 15906353,
+      "randomValue1": 10275207,
+      "randomValue2": -17516
+    },
+    "title": "The Start of Something New",
+    "author": {
+      "name": "KohiHQ Team",
+      "link": "/u/KohiHQ-Team"
+    },
+    "postedTime": "4:55 AM Jun 1, 2025",
+    "content": "This has been a long wait for everyone and we are glad to announce KohiHQ. This has been in the works for quite a while now and we want to share it with you. \u003Cbr\u003E \u003Cbr\u003E KohiHQ will have a new type of factions gamemode that will be revealed in a trailer in a few days. \u003Cbr\u003E \u003Cbr\u003E As for now we plan on having these servers up at the end of next week for testing:",
+    "readMoreLink": "/forums/83683/The-Start-of-Something-New",
+    "timestamp": "1748778959"
   }
 ]
