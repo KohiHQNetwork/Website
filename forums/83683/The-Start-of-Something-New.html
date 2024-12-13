@@ -183,18 +183,105 @@ This has been a long wait for everyone and we are glad to announce KohiHQ. This 
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/plugin/relativeTime.js"></script>
 <script>
-    dayjs.extend(dayjs_plugin_relativeTime);
-
-    // Update all <time> elements with the class 'relative-time'
-    document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
-        var timestamp = timeElement.getAttribute('datetime');
-        // Convert epoch time to relative time
-        var relativeTime = dayjs.unix(timestamp).fromNow();
-        // Update the text content with relative time
-        timeElement.textContent = relativeTime;
-        // Optionally, update the tooltip title too
-        timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
-    });
+//     // Make an AJAX request to the API endpoint
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("GET", "https://qsite.kohihq.net/forums/news/", true);
+//     xhr.onreadystatechange = function () {
+//         if (xhr.readyState === 4 && xhr.status === 200) {
+//             // Parse the JSON response
+//             var responses = JSON.parse(xhr.responseText);
+//             // Get the container for announcements
+//             var forum = document.getElementById("forum");
+//             forum.innerHTML = '';
+//             // Iterate over each announcement in the response
+//             responses.forEach(function (response) {
+//                 var htmlContent = `
+// <div class="forum-tools">
+// <ol class="breadcrumb">
+// <li class="breadcrumb-item">
+// <a href="https://www.kohihq.net/forums">
+// <i class="fa fa-home"></i>
+// Forums
+// </a>
+// </li>
+// <li class="breadcrumb-item">
+// <a href="https://www.kohihq.net/forums/news">
+// News
+// </a>
+// </li>
+// <li class="breadcrumb-item">
+// <a href="https://www.kohihq.net${response.readMoreLink}">
+// ${response.title}
+// </a>
+// </li>
+// </ol>
+// </div>
+// <div class="block">
+// <div class="forum-post">
+// <div class="forum-post-avatar">
+// <a href="${response.author.link}" class="circle-avatar">
+// <img src="${response.author.avatar}" alt="${response.author.name}" width="80" height="80" class="avatar-half">
+// </a>
+// </div>
+// <div class="forum-post-body">
+// <h3 class="forum-post-title break-word">
+// ${response.title}
+// <a class="upvotes ">
+// <i class="fa fa-arrow-up"></i>
+// <span class="count">0</span>
+// </a>
+// </h3>
+// <div>
+// </div>
+// <div class="forum-post-info">
+// <time class="relative-time" datetime="${response.timestamp}" data-format="ago" data-toggle="tooltip">${response.postedTime}</time>
+// by
+// <a href="${response.author.link}">
+// <span class="font-weight-bold name-color-owner">
+// ${response.author.name}
+// </span>
+// </a>
+// </div>
+// <div class="forum-post-content break-word">
+// ${response.content}
+// </div>
+// <div class="forum-post-controls">
+// </div>
+// </div>
+// </div>
+// </div>
+// <div id="forum-replies" class="block">
+                    
+                        
+//                             <div class="alert alert-danger">
+//                                 This thread is no longer open for replies.
+//                             </div>
+// </div>
+//                 `;
+//                 // Append the HTML content to the news container
+//                 //newsContainer.innerHTML += htmlContent;
+//                 forum.insertAdjacentHTML('afterbegin', htmlContent);
+//             });
+//             updatetimes();
+//         }
+//     };
+//     xhr.send();
+    updatetimes();
+    
+    function updatetimes() {
+        dayjs.extend(dayjs_plugin_relativeTime);
+        
+        // Update all <time> elements with the class 'relative-time'
+        document.querySelectorAll('time.relative-time').forEach(function(timeElement) {
+            var timestamp = timeElement.getAttribute('datetime');
+            // Convert epoch time to relative time
+            var relativeTime = dayjs.unix(timestamp).fromNow();
+            // Update the text content with relative time
+            timeElement.textContent = relativeTime;
+            // Optionally, update the tooltip title too
+            timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
+        });
+    }
 </script>
 </body>
 </html>
