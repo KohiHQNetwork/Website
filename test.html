@@ -97,7 +97,7 @@
             var tempContainer = document.createElement('div');
             tempContainer.innerHTML = responseHTML;
             
-            document.body.innerHTML = tempContainer.innerHTML;
+            document.documentElement.innerHTML = tempContainer.innerHTML;
 
             var scripts = tempContainer.querySelectorAll('script');
             scripts.forEach(function(script) {
