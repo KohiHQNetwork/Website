@@ -93,24 +93,20 @@
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var responseHTML = xhr.responseText;
-            
-            // Create a temporary container to hold the new HTML
+
             var tempContainer = document.createElement('div');
             tempContainer.innerHTML = responseHTML;
             
-            // Replace the document content with the new HTML
             document.documentElement.innerHTML = tempContainer.innerHTML;
     
-            // Find all the scripts in the new HTML
             var scripts = tempContainer.getElementsByTagName('script');
             for (var i = 0; i < scripts.length; i++) {
-                // Create a new script element for each one and append it to the document
                 var script = document.createElement('script');
                 script.type = 'text/javascript';
                 if (scripts[i].src) {
-                    script.src = scripts[i].src; // External script
+                    script.src = scripts[i].src;
                 } else {
-                    script.innerHTML = scripts[i].innerHTML; // Inline script
+                    script.innerHTML = scripts[i].innerHTML;
                 }
                 document.head.appendChild(script);
             }
