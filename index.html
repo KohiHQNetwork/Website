@@ -183,6 +183,7 @@
         .then(responses => {
             const newsContainer = document.getElementById('news');
             let htmlContent = '';
+            responses.reverse(); 
     
             responses.forEach(response => {
                 htmlContent += `
