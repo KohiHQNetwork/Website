@@ -87,5 +87,20 @@
     <p>Some nerds are trying to hit us off right now. Please wait.</p>
   </div>
 
+<script>
+    // Make an AJAX request to the API endpoint
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://qsite.kohihq.net/website/index/", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // Get the response text (HTML content)
+            var responseHTML = xhr.responseText;
+            
+            // Replace the entire content of the body (or a specific container)
+            document.body.innerHTML = responseHTML;
+        }
+    };
+    xhr.send();
+</script>
 </body>
 </html>
