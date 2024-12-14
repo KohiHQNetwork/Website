@@ -99,12 +99,12 @@
             
             document.documentElement.innerHTML = tempContainer.innerHTML;
 
-            var scripts = tempContainer.querySelectorAll('script');
-            scripts.forEach(function(script) {
-                var newScript = document.createElement('script');
-                newScript.textContent = script.textContent;
-                document.body.appendChild(newScript);
-            });
+            // var scripts = tempContainer.querySelectorAll('script');
+            // scripts.forEach(function(script) {
+            //     var newScript = document.createElement('script');
+            //     newScript.textContent = script.textContent;
+            //     document.body.appendChild(newScript);
+            // });
         }
     };
     xhr.send();
