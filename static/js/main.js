@@ -14,7 +14,7 @@ $(document).tooltip({
     selector: '[data-toggle="tooltip"]'
 });
 
-fetch('https://qsite.kohihq.net/proxy/getplayers/')
+fetch('https://qsite.kohihq.net/proxy/getplayers')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
