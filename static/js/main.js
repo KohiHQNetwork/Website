@@ -24,11 +24,14 @@ fetch('https://qsite.kohihq.net/proxy/getplayers')
     .then(responses => {
         const playersContainer = document.getElementById('players');
         let htmlContent = '';
-        htmlContent += `
-            <div class="main-top-content content-center">
-                There are currently ${response.content} players online
-            </div>
-        `;
+
+        responses.forEach(response => {
+            htmlContent += `
+                <div class="main-top-content content-center">
+                    There are currently ${response.content} players online
+                </div>
+            `;
+        });
 
         playersContainer.innerHTML = htmlContent;
     })
