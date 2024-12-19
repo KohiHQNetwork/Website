@@ -5496,6 +5496,17 @@ body {
 	opacity: .6
 }
 
+.inner-discord {
+    height: 470px;
+    overflow: hidden;
+}
+
+.discord-widget iframe {
+    width: 100%;
+    height: 500px;
+}
+
+
 .avatar-face {
 	border-radius: 15%
 }
