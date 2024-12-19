@@ -203,32 +203,6 @@
         });
     });
 
-    fetch('https://qsite.kohihq.net/proxy/getplayers')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json(); 
-        })
-        .then(responses => {
-            const playersContainer = document.getElementById('players');
-            
-            if (responses && typeof responses.content !== 'undefined') {
-                let htmlContent = `
-                    <div class="main-top-content content-center">
-                        There are currently ${responses.content} players online
-                    </div>
-                `;
-                
-                playersContainer.innerHTML = htmlContent;
-            } else {
-                playersContainer.innerHTML = '<div class="main-top-content content-center">Error: Unable to fetch player data</div>';
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching the players:', error);
-        });
-
     fetch('https://qsite.kohihq.net/forums/news/')
         .then(response => {
             if (!response.ok) {
