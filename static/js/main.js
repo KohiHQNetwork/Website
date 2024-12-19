@@ -8,3 +8,8 @@ function toClipboard(input) {
   
     document.body.removeChild(textarea);
 }
+
+// Initialize Tooltips
+$(document).tooltip({
+    selector: '[data-toggle="tooltip"]'
+});
