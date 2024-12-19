@@ -231,6 +231,11 @@
             timeElement.setAttribute('title', dayjs.unix(timestamp).format('HH:mm A MMM D, YYYY'));
         });
     }
+    
+    // Initialize Tooltips
+    $(document).tooltip({
+        selector: '[data-toggle="tooltip"]'
+    });
 </script>
 </body>
 </html>
