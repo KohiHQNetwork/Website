@@ -551,6 +551,7 @@ a:hover {
 	font-weight: 700;
 	font-size: 11px;
 	line-height: 15px;
+	background: #db4040;
 	text-transform: uppercase;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .17);
 	box-shadow: 0 0 1px 1px rgba(255, 255, 255, .32) inset;
