@@ -442,7 +442,7 @@ html.dark-mode .form-control:focus {
 	box-shadow: 0 0 0 .2rem rgba(255, 0, 0, .25);
 }
 
-html.dark-mode .user-box .img-box {
+/*html.dark-mode .user-box .img-box {
 	width: 172px;
 	height: 172px;
 	border-radius: 100%;
@@ -450,15 +450,15 @@ html.dark-mode .user-box .img-box {
 	border: 2px solid #24272a;
 	box-shadow: 0 0 5px rgba(26, 23, 23, 0.88);
 	background: #36383b;
-}
+}*/
 
-html.dark-mode .user-box .img-box img {
+/*html.dark-mode .user-box .img-box img {
 	vertical-align: top;
 	width: 100%;
 	height: 100%;
 	border-radius: 100%;
 	border: 2px solid #303133;
-}
+}*/
 
 html.dark-mode .user-box .name {
 	font-variant-ligatures: none;
