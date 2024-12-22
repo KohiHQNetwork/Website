@@ -39,7 +39,7 @@ html.dark-mode .navbar-expand-lg .navbar-nav li a {
 	opacity: .75;
 }
 html.dark-mode .navbar-expand-lg .navbar-brand {
-	filter: brightness(5);
+	filter: brightness(1);
 }
 
 html.dark-mode body {
