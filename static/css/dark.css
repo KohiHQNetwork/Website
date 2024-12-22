@@ -3,11 +3,11 @@ html.dark-mode .header {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .23) !important;
 }
 
-html:not(.dark-mode) #lunar-discord-dark {
+html:not(.dark-mode) #kohihq-discord-dark {
 	display: none !important;
 }
 
-html.dark-mode #lunar-discord-light {
+html.dark-mode #kohihq-discord-light {
 	display: none !important;
 }
 
