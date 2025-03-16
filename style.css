@@ -2455,7 +2455,7 @@ body {
 	-webkit-transition: opacity .3s ease-in-out;
 	transition: opacity .3s ease-in-out;
 	width: 100%;
-	background-image: url(/static/images/btn-bg.png);
+/*	background-image: url(/static/images/btn-bg.png);*/
 	background-size: cover;
 	border-radius: 0 0 5px 5px;
 	padding: 7px 10px 6px;
@@ -3674,7 +3674,7 @@ body {
 	width: 100%;
 	margin-top: -63px;
 	margin-bottom: 20px;
-	background: url(/static/images/footer-banner-bg2.png) center;
+	background: url(/static/images/footer-banner-bg.jpg) center;
 	background-size: cover
 }
 
